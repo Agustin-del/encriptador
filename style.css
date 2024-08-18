@@ -65,11 +65,6 @@ button {
     cursor:pointer;
 }
 
-button:hover {
-    background-color: var(--botones);
-    color:white
-}
-
 .egreso {
     display: flex;
     flex-direction: column;
@@ -154,9 +149,13 @@ footer {
     
 }
 
-@media(min-width:801px) {
+@media(min-width:801px)  {
 
-
+    button:hover {
+        background-color: var(--botones);
+        color:white
+    }
+    
     .contenedor-principal {
         flex-direction: column;
         align-items: center;       
@@ -185,11 +184,5 @@ footer {
     }
     .egreso {
         width: 85%;
-    }
-}
-
-@media (min-width:1000px){
-    .contenedor-principal {
-
     }
 }
