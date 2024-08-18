@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="./assets/Logo.png" alt="logo de alura">
+    </header>
+    <main class="contenedor-principal">
+        <section class= "ingreso">
+            <textarea required name="textoBruto" id="textoBruto" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
+            <div class ="ingreso-advertencia">
+                <img src="./assets/Group.png" alt="icono de advertencia">
+                <p>Sólo letras minúsculas y sin acentos</p>
+            </div>
+            <div class="ingreso-botones">
+                <button onclick="encriptar()" >Encriptar</button>
+                <button onclick="desencriptar()">Desencriptar</button>
+            </div>
+        </section>
+        <section class = "egreso">
+            <div class="respuesta">
+                <div class="respuesta-inicial">
+                    <p class ="respuesta-titulo">Ningún mensaje fue encontrado</p>
+                    <p class ="respuesta-mensaje">Ingresa el texto que desees encriptar o desencriptar.</p>
+                    <img src="./assets/inicio encriptador.png" alt="texto de inicio" height="300px" >
+                </div>
+                <div class="respuesta-resultado" style="display: none;">
+                    <p id="textoProcesado"></p>
+                    <button onclick="copy()">Copiar texto</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 Encriptador</p>
+        <p>Made by Edmundo Rúveda</p>
+        <a target ="_blank" href="https://www.linkedin.com/in/edmundo-agust%C3%ADn-r%C3%BAveda/"><img src="./assets/linkedin.png" height="20px" alt="logo linkedin"></a>
+        <a target="_blank" href="https://github.com/Agustin-del"><img src="./assets/github.png" height="20px" alt="logo de github"></a>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
